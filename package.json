@@ -1,0 +1,31 @@
+{
+  "name": "bootstrap-5-starter-code",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "parcel ./src/index.html",
+    "prebuild": "npx rimraf build",
+    "build": "parcel build --public-url ./ ./src/index.html --experimental-scope-hoisting --out-dir build --no-minify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/rqkohistani/bootstrap-5-starter-code.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/rqkohistani/bootstrap-5-starter-code/issues"
+  },
+  "homepage": "https://github.com/rqkohistani/bootstrap-5-starter-code#readme",
+  "dependencies": {
+    "@popperjs/core": "^2.11.7",
+    "bootstrap": "^5.2.3"
+  },
+  "devDependencies": {
+    "cssnano": "^6.0.0",
+    "postcss": "^8.4.21",
+    "sass": "^1.62.0"
+  }
+}

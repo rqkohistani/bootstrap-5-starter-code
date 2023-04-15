@@ -1,0 +1,32 @@
+// Modifying Default Variables. This is not the recommended way to modify Bootstrap’s default variables. Instead, we recommend using Sass’s map-merge function to add your own values to the default $theme-colors map. This way, you can take advantage of Bootstrap’s default color palette while adding your own custom colors. For example, here’s how to add a new color to the default $theme-colors map.
+// Although some may argue that this is not the best way to add custom colors, You can use css to do the same
+
+// $primary: #007bff;
+
+// $secondary: #6c757d;
+// $secondary: red;
+
+// Add utilities
+// New utilities can be added to the default $utilities map with a map-merge. Make sure our required Sass files and _utilities.scss are imported first, then use the map-merge to add your additional utilities. For example, here’s how to add a responsive cursor utility with three values.
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/maps";
+@import "../node_modules/bootstrap/scss/utilities"; // for some reason I got an error when I tried to import this file but add the above variables instead https://github.com/twbs/bootstrap/issues/36785
+
+
+// https://getbootstrap.com/docs/5.0/utilities/api/
+$utilities: map-merge(
+  $utilities,
+  (
+    "background-color": (
+      property: background-color,
+      class: pb,
+      responsive: true,
+      values: map-merge($theme-colors, ("lightcyan": #afddeb, "lightyellow": #eeeacc, "light-orange":rgb(238, 130, 32)))),
+      "padding-bottom": (property: padding-bottom, class: pb, values: map-merge($spacers, ("custom":8rem))),
+      ));
+      // add this somewhere in the file to test it. bg-light-orange,  pb-custom
+
+
+      // https://getbootstrap.com/docs/5.0/utilities/spacing/
+@import "../node_modules/bootstrap/scss/bootstrap";

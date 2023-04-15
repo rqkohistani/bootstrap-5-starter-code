@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../scss/custom.scss" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <title>Bootstrap start template</title>
+  </head>
+  <!-- TODO: mobile toggle does not work -->
+  <body data-bs-spy="scroll" data-bs-target="#nav-scroll">
+    <nav
+      class="navbar navbar-expand-md navbar-light bg-light fixed-top"
+      id="nav-scroll"
+    >
+      <div class="container">
+        <!-- <a href="#" class="navbar-brand"><img src="../images/hero-bg.jpg" alt=""></a> -->
+        <a href="#" class="navbar-brand"
+          ><img
+            src="../images/logo.png"
+            alt=""
+            style="height: 30px; width: 100px"
+        /></a>
+
+        <button
+          class="navbar-toggler"
+          data-bs-toggle="collapse"
+          data-bs-target="#navBar"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse"
+          id="navBar"
+          data-bs-parent="#nav-scroll"
+        >
+          
+          <ul class="navbar-nav ms-auto fw-bold">
+            <li class="nav-item">
+              <a href="#home" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="#about" class="nav-link">About</a>
+            </li>
+            <li class="nav-item">
+              <a href="#portfolio" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a href="#blog" class="nav-link">Blog</a>
+            </li>
+            <li class="nav-item">
+              <a href="#contact" class="nav-link">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section
+        id="home"
+        class="d-flex min-vh-100 flex-column justify-content-center align-items-center"
+        style="
+          background-image: url('../images/hero-bg.jpg');
+          background-repeat: no-repeat;
+          background-size: cover;
+        "
+      >
+        <h1 class="fw-bolder display-2 mb-3">Bootstrap Template</h1>
+        <h6 class="fs-3 text-secondary text-capitalize mb-4">
+          I'm a full-stack developer
+        </h6>
+        <a href="#about" class="btn btn-danger rounded-pill">About Me</a>
+      </section>
+
+      <section id="blog" class="container py-5 bg-light">
+        <div class="text-center py-5">
+          <h2 class="fw-bolder text-uppercase">My Blog</h2>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+            adipisci porro eos at. Quia repellat magnam blanditiis dignissimos,
+            perferendis in explicabo, natus itaque delectus inventore quasi a
+            esse sed ex! Nobis, suscipit ex. Est, iure atque. Est veritatis
+            facilis totam aspernatur unde consequatur iusto praesentium? Laborum
+            accusantium commodi a quaerat ut at ad dicta temporibus, ipsam
+            praesentium minus id inventore?
+          </p>
+        </div>
+        <div class="row pb-5">
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img src="../images/img1.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title text-center py-2">
+                  Lorem ipsum dolor sit amet.
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis at illum natus sequi explicabo, adipisci saepe et.
+                  Vero, labore enim.
+                </p>
+                <a href="#" class="btn btn-light">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img src="../images/img2.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title text-center py-2">
+                  Lorem ipsum dolor sit amet.
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis at illum natus sequi explicabo, adipisci saepe et.
+                  Vero, labore enim.
+                </p>
+                <a href="#" class="btn btn-light">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img src="../images/img3.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title text-center py-2">
+                  Lorem ipsum dolor sit amet.
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis at illum natus sequi explicabo, adipisci saepe et.
+                  Vero, labore enim.
+                </p>
+                <a href="#" class="btn btn-light">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img src="../images/img1.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title text-center py-2">
+                  Lorem ipsum dolor sit amet.
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis at illum natus sequi explicabo, adipisci saepe et.
+                  Vero, labore enim.
+                </p>
+                <a href="#" class="btn btn-light">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img src="../images/img2.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title text-center py-2">
+                  Lorem ipsum dolor sit amet.
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis at illum natus sequi explicabo, adipisci saepe et.
+                  Vero, labore enim.
+                </p>
+                <a href="#" class="btn btn-light">Read more...</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 col-md-6 mb-4">
+            <div class="card">
+              <img src="../images/img3.jpg" alt="" class="card-img-top" />
+              <div class="card-body">
+                <h5 class="card-title text-center py-2">
+                  Lorem ipsum dolor sit amet.
+                </h5>
+                <p class="card-text">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                  Facilis at illum natus sequi explicabo, adipisci saepe et.
+                  Vero, labore enim.
+                </p>
+                <a href="#" class="btn btn-light">Read more...</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="contact" class="contact">
+        <div class="container">
+          <div class="section-title py-5">
+            <h2>Contact</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime
+              adipisci porro eos at. Quia repellat magnam blanditiis
+              dignissimos, perferendis in explicabo, natus itaque delectus
+              inventore quasi a esse sed ex! Nobis, suscipit ex. Est, iure
+              atque. Est veritatis facilis totam aspernatur unde consequatur
+              iusto praesentium? Laborum accusantium commodi a quaerat ut at ad
+              dicta temporibus, ipsam praesentium minus id inventore?
+            </p>
+          </div>
+        </div>
+        <div class="container">
+          <div class="row mt-1">
+            <div class="col-lg-6 mb-5 p-3 bg-light">
+              <form action="" class="text-black">
+                <div class="mb-3">
+                  <label for="name" class="form-label">Your Name</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="email" class="form-label">Your Email</label>
+                  <input type="email" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="subject" class="form-label">Your Subject</label>
+                  <input type="text" class="form-control" />
+                </div>
+                <div class="mb-3">
+                  <label for="message" class="form-label">Your Message</label>
+                  <textarea
+                    name="message"
+                    rows="10"
+                    class="form-control"
+                  ></textarea>
+                </div>
+                <button type="submit" class="btn btn-danger btn-lg">
+                  Send Message
+                </button>
+              </form>
+            </div>
+
+            <div class="col-lg-6">
+              <div>
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3162.578657576858!2d-121.9727716846885!3d37.56498957979819!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808fc060038f2fc5%3A0x89466fc83d27537d!2s570%20Lambert%20Terrace%2C%20Fremont%2C%20CA%2094536%2C%20USA!5e0!3m2!1sen!2sse!4v1679843324493!5m2!1sen!2sse"
+                  width="600"
+                  height="638"
+                  style="border: 0"
+                  allowfullscreen=""
+                  loading="lazy"
+                  referrerpolicy="no-referrer-when-downgrade"
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-light py-3">
+      <div class="container text-center">
+        <p>
+          &copy; 2023 My Bootstrap Template Website. All Rights Reserved.Author
+          <a href="https://rqkohistani.github.io/" target="_blank"
+            >Rashed Qazizada</a
+          >
+        </p>
+      </div>
+    </footer>
+    <script src="../js/bootstrap.bundle.min.js"></script>
+    <script src="./index.js"></script>
+  </body>
+</html>
